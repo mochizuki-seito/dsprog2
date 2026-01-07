@@ -9,7 +9,7 @@ def main(page: ft.Page):
     page.window_width = 1200
     page.window_height = 850
 
-    COLOR_HEADER = "#311B92"
+    COLOR_HEADER = "#1B7292"
     COLOR_SIDEBAR = "#455A64"
     COLOR_BG = "#CFD8DC"
 
@@ -36,7 +36,6 @@ def main(page: ft.Page):
         leading=ft.Icon(ft.Icons.WB_SUNNY_OUTLINED, color="white"),
         title=ft.Text("天気報", size=24, weight="bold", color="white"),
         bgcolor=COLOR_HEADER,
-        actions=[ft.IconButton(ft.Icons.GRID_VIEW_ROUNDED, icon_color="white"), ft.IconButton(ft.Icons.MENU, icon_color="white")],
     )
 
     # --- 2. データの動的解析ロジック ---
